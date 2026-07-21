@@ -5,13 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Login — Planet Tech Nepal</title>
   <meta name="description" content="Sign in to your Planet Tech Nepal account to manage cameras, weather stations and live streams." />
+  <meta name="robots" content="noindex, follow" />
   <link rel="canonical" href="https://planettechnepal.com/login" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Login — Planet Tech Nepal" />
+  <meta property="og:description" content="Sign in to your Planet Tech Nepal account to manage cameras, weather stations and live streams." />
+  <meta property="og:image" content="assets/images/logo.webp" />
+  <meta property="og:url" content="https://planettechnepal.com/login" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Login — Planet Tech Nepal" />
+  <meta name="twitter:description" content="Sign in to your Planet Tech Nepal account to manage cameras, weather stations and live streams." />
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" /></noscript>
   <link rel="stylesheet" href="assets/css/style.css?v=2" />
 </head>
 <body>
@@ -42,6 +57,7 @@
 
       <div class="login-panel">
         <div class="login-card">
+          <h1 class="sr-only">Login — Planet Tech Nepal</h1>
           <form id="loginForm" class="login-form" novalidate>
             <div class="login-field">
               <label for="email" class="sr-only">Email</label>

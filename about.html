@@ -6,12 +6,43 @@
   <title>About Us — Planet Tech Nepal</title>
   <meta name="description" content="Planet Tech Nepal is a team of surveillance engineers connecting mountains to the world through intelligent CCTV, IoT and cloud streaming." />
   <link rel="canonical" href="https://planettechnepal.com/about" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="About Us — Planet Tech Nepal" />
+  <meta property="og:description" content="Planet Tech Nepal is a team of surveillance engineers connecting mountains to the world through intelligent CCTV, IoT and cloud streaming." />
+  <meta property="og:image" content="assets/images/about-station.webp" />
+  <meta property="og:url" content="https://planettechnepal.com/about" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About Us — Planet Tech Nepal" />
+  <meta name="twitter:description" content="Planet Tech Nepal is a team of surveillance engineers connecting mountains to the world through intelligent CCTV, IoT and cloud streaming." />
+  <meta name="twitter:image" content="assets/images/about-station.webp" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Planet Tech Nepal",
+    "url": "https://planettechnepal.com/",
+    "logo": "https://planettechnepal.com/assets/images/logo.webp",
+    "email": "info@planettechnepal.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kathmandu",
+      "addressCountry": "NP"
+    }
+  }
+  </script>
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" /></noscript>
   <link rel="stylesheet" href="assets/css/style.css?v=2" />
 </head>
 <body>
@@ -49,7 +80,7 @@
     <section class="pad">
       <div class="container">
         <div class="split">
-          <div class="split-media"><img src="assets/images/about-station.webp" alt="High-altitude installation" /></div>
+          <div class="split-media"><img src="assets/images/about-station.webp" width="860" height="778" alt="High-altitude installation" fetchpriority="high" decoding="async" /></div>
           <div class="split-body">
             <h2>Our story</h2>
             <p>Planet Tech Nepal started with a simple frustration: the most breathtaking and important places in the Himalaya were also the hardest to watch over. Power was scarce, networks were thin, and off-the-shelf cameras froze and failed.</p>
@@ -63,7 +94,7 @@
     <section class="pad band">
       <div class="container">
         <div class="split reverse">
-          <div class="split-media"><img src="assets/images/about-engineer.webp" alt="Field engineer in the field" /></div>
+          <div class="split-media"><img src="assets/images/about-engineer.webp" width="528" height="560" alt="Field engineer in the field" loading="lazy" decoding="async" /></div>
           <div class="split-body">
             <h2>Our mission</h2>
             <p>To deliver real-time visibility through secure, ultra-low-latency streaming solutions designed for reliability, scalability and long-term performance — even in extreme environments.</p>
@@ -117,7 +148,7 @@
       <div class="container">
         <div class="cta">
           <div class="cta-left">
-            <img class="cta-logo" src="assets/images/logo-gold.png" alt="Planet Tech Nepal" />
+            <img class="cta-logo" src="assets/images/logo-gold.png" width="1120" height="405" alt="Planet Tech Nepal" loading="lazy" decoding="async" />
             <address class="cta-address">Planet Tech Nepal Pvt. Ltd<br />Kathmandu, Nepal<br /><a href="mailto:info@planettechnepal.com">info@planettechnepal.com</a></address>
           </div>
           <div class="cta-right">

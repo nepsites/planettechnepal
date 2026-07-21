@@ -6,12 +6,43 @@
   <title>Weather Stations — Planet Tech Nepal</title>
   <meta name="description" content="Real-time environmental data from remote high-altitude weather stations across Nepal — temperature, wind, humidity and pressure, streamed live to the cloud." />
   <link rel="canonical" href="https://planettechnepal.com/weather" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Weather Stations — Planet Tech Nepal" />
+  <meta property="og:description" content="Real-time environmental data from remote high-altitude weather stations across Nepal — temperature, wind, humidity and pressure, streamed live to the cloud." />
+  <meta property="og:image" content="assets/images/service-weather.webp" />
+  <meta property="og:url" content="https://planettechnepal.com/weather" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Weather Stations — Planet Tech Nepal" />
+  <meta name="twitter:description" content="Real-time environmental data from remote high-altitude weather stations across Nepal — temperature, wind, humidity and pressure, streamed live to the cloud." />
+  <meta name="twitter:image" content="assets/images/service-weather.webp" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Planet Tech Nepal",
+    "url": "https://planettechnepal.com/",
+    "logo": "https://planettechnepal.com/assets/images/logo.webp",
+    "email": "info@planettechnepal.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kathmandu",
+      "addressCountry": "NP"
+    }
+  }
+  </script>
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" /></noscript>
   <link rel="stylesheet" href="assets/css/style.css?v=2" />
 </head>
 <body>
@@ -53,7 +84,7 @@
     <section class="pad">
       <div class="container">
         <div class="split">
-          <div class="split-media"><img src="assets/images/service-weather.webp" alt="High-altitude weather station reporting live conditions" /></div>
+          <div class="split-media"><img src="assets/images/service-weather.webp" width="1024" height="1536" alt="High-altitude weather station reporting live conditions" fetchpriority="high" decoding="async" /></div>
           <div class="split-body">
             <h2>One rugged station, every metric that matters</h2>
             <p>Each unit combines an anemometer, thermometer, hygrometer and barometer with a hardened display and long-range radio — engineered to keep reporting through snow, ice and -20&deg;C storms.</p>
@@ -112,7 +143,7 @@
       <div class="container">
         <div class="cta">
           <div class="cta-left">
-            <img class="cta-logo" src="assets/images/logo-gold.png" alt="Planet Tech Nepal" />
+            <img class="cta-logo" src="assets/images/logo-gold.png" width="1120" height="405" alt="Planet Tech Nepal" loading="lazy" decoding="async" />
             <address class="cta-address">Planet Tech Nepal Pvt. Ltd<br />Kathmandu, Nepal<br /><a href="mailto:info@planettechnepal.com">info@planettechnepal.com</a></address>
           </div>
           <div class="cta-right">

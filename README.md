@@ -97,7 +97,15 @@ Formspree dashboard.
 ## Notes
 
 - Fully responsive with a mobile hamburger menu (`assets/js/main.js`).
-- SEO: title, meta description, Open Graph/Twitter tags, canonical URL, sitemap, robots —
-  set per page.
+- SEO: title, meta description, Open Graph/Twitter tags, canonical URL, JSON-LD
+  Organization structured data, sitemap, robots — set per page (`login.html` is
+  marked `noindex` since it isn't real content).
+- Performance: every image has explicit `width`/`height` (prevents layout shift),
+  below-the-fold images are `loading="lazy"`, the first in-page image is marked
+  `fetchpriority="high"`, and the Google Fonts stylesheet loads asynchronously
+  (`media="print"` + `onload` swap) so it never blocks rendering.
+- CSS/JS are cache-busted with a `?v=` query string — bump it (`?v=3`, `?v=4`, …)
+  any time you edit `style.css` or `main.js` so Cloudflare/browsers don't serve a
+  stale copy.
 - Before going live, confirm the absolute URLs in `sitemap.xml`, `robots.txt` and each
   page's Open Graph tags match your domain.

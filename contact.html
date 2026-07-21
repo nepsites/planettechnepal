@@ -6,12 +6,43 @@
   <title>Contact — Planet Tech Nepal</title>
   <meta name="description" content="Get in touch with Planet Tech Nepal about live camera streaming, weather stations, and intelligent CCTV for remote and extreme environments." />
   <link rel="canonical" href="https://planettechnepal.com/contact" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact — Planet Tech Nepal" />
+  <meta property="og:description" content="Get in touch with Planet Tech Nepal about live camera streaming, weather stations, and intelligent CCTV for remote and extreme environments." />
+  <meta property="og:image" content="assets/images/hero.webp" />
+  <meta property="og:url" content="https://planettechnepal.com/contact" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact — Planet Tech Nepal" />
+  <meta name="twitter:description" content="Get in touch with Planet Tech Nepal about live camera streaming, weather stations, and intelligent CCTV for remote and extreme environments." />
+  <meta name="twitter:image" content="assets/images/hero.webp" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Planet Tech Nepal",
+    "url": "https://planettechnepal.com/",
+    "logo": "https://planettechnepal.com/assets/images/logo.webp",
+    "email": "info@planettechnepal.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kathmandu",
+      "addressCountry": "NP"
+    }
+  }
+  </script>
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" /></noscript>
   <link rel="stylesheet" href="assets/css/style.css?v=2" />
 </head>
 <body>
@@ -95,7 +126,7 @@
             <div class="field"><label for="location">Location / site</label><input id="location" name="Location" type="text" placeholder="e.g. Manang, 3,520 m" /></div>
             <div class="field"><label for="message">Message</label><textarea id="message" name="Message" placeholder="Tell us what you'd like to monitor&hellip;" required></textarea></div>
             <!-- Honeypot — Formspree's own spam-filter convention: real visitors never fill this -->
-            <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" />
+            <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
             <input type="hidden" name="_subject" value="New contact form message — Planet Tech Nepal" />
             <button type="submit" class="btn btn-dark btn-block">Send message <span class="arrow">&rarr;</span></button>
             <p class="sec-sub" style="margin-top:14px;font-size:13.5px">Prefer to write directly? Email <a href="mailto:info@planettechnepal.com">info@planettechnepal.com</a>.</p>
@@ -109,7 +140,7 @@
       <div class="container">
         <div class="cta">
           <div class="cta-left">
-            <img class="cta-logo" src="assets/images/logo-gold.png" alt="Planet Tech Nepal" />
+            <img class="cta-logo" src="assets/images/logo-gold.png" width="1120" height="405" alt="Planet Tech Nepal" fetchpriority="high" decoding="async" />
             <address class="cta-address">Planet Tech Nepal Pvt. Ltd<br />Kathmandu, Nepal<br /><a href="mailto:info@planettechnepal.com">info@planettechnepal.com</a></address>
           </div>
           <div class="cta-right">

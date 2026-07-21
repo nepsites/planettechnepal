@@ -6,12 +6,43 @@
   <title>Pricing — Planet Tech Nepal</title>
   <meta name="description" content="Simple plans for live camera streaming and weather monitoring — Starter, Pro and Enterprise. Solar-ready hardware, cloud DVR and AI alerts included." />
   <link rel="canonical" href="https://planettechnepal.com/pricing" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pricing — Planet Tech Nepal" />
+  <meta property="og:description" content="Simple plans for live camera streaming and weather monitoring — Starter, Pro and Enterprise. Solar-ready hardware, cloud DVR and AI alerts included." />
+  <meta property="og:image" content="assets/images/hero.webp" />
+  <meta property="og:url" content="https://planettechnepal.com/pricing" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pricing — Planet Tech Nepal" />
+  <meta name="twitter:description" content="Simple plans for live camera streaming and weather monitoring — Starter, Pro and Enterprise. Solar-ready hardware, cloud DVR and AI alerts included." />
+  <meta name="twitter:image" content="assets/images/hero.webp" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Planet Tech Nepal",
+    "url": "https://planettechnepal.com/",
+    "logo": "https://planettechnepal.com/assets/images/logo.webp",
+    "email": "info@planettechnepal.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kathmandu",
+      "addressCountry": "NP"
+    }
+  }
+  </script>
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" /></noscript>
   <link rel="stylesheet" href="assets/css/style.css?v=2" />
 </head>
 <body>
@@ -64,10 +95,10 @@
             <div class="interest">
               <button type="button" class="interest-toggle">I&rsquo;m interested &mdash; just take my email</button>
               <form class="interest-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" hidden>
-                <input type="email" name="email" placeholder="you@example.com" required />
+                <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required />
                 <input type="hidden" name="Plan" value="Starter" />
                 <input type="hidden" name="_subject" value="New interest signup — Starter plan" />
-                <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" />
+                <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
                 <button type="submit" class="btn btn-dark btn-sm">Notify me</button>
               </form>
             </div>
@@ -90,10 +121,10 @@
             <div class="interest">
               <button type="button" class="interest-toggle">I&rsquo;m interested &mdash; just take my email</button>
               <form class="interest-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" hidden>
-                <input type="email" name="email" placeholder="you@example.com" required />
+                <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required />
                 <input type="hidden" name="Plan" value="Pro" />
                 <input type="hidden" name="_subject" value="New interest signup — Pro plan" />
-                <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" />
+                <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
                 <button type="submit" class="btn btn-light btn-sm">Notify me</button>
               </form>
             </div>
@@ -115,10 +146,10 @@
             <div class="interest">
               <button type="button" class="interest-toggle">I&rsquo;m interested &mdash; just take my email</button>
               <form class="interest-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" hidden>
-                <input type="email" name="email" placeholder="you@example.com" required />
+                <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required />
                 <input type="hidden" name="Plan" value="Enterprise" />
                 <input type="hidden" name="_subject" value="New interest signup — Enterprise plan" />
-                <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" />
+                <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
                 <button type="submit" class="btn btn-dark btn-sm">Notify me</button>
               </form>
             </div>
@@ -146,7 +177,7 @@
       <div class="container">
         <div class="cta">
           <div class="cta-left">
-            <img class="cta-logo" src="assets/images/logo-gold.png" alt="Planet Tech Nepal" />
+            <img class="cta-logo" src="assets/images/logo-gold.png" width="1120" height="405" alt="Planet Tech Nepal" fetchpriority="high" decoding="async" />
             <address class="cta-address">Planet Tech Nepal Pvt. Ltd<br />Kathmandu, Nepal<br /><a href="mailto:info@planettechnepal.com">info@planettechnepal.com</a></address>
           </div>
           <div class="cta-right">

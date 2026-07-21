@@ -23,6 +23,22 @@
   <meta name="twitter:description" content="Intelligent CCTV & live mountain streaming for extreme environments." />
   <meta name="twitter:image" content="assets/images/hero.webp" />
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Planet Tech Nepal",
+    "url": "https://planettechnepal.com/",
+    "logo": "https://planettechnepal.com/assets/images/logo.webp",
+    "email": "info@planettechnepal.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kathmandu",
+      "addressCountry": "NP"
+    }
+  }
+  </script>
+
   <!-- Favicons -->
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png" />
@@ -32,7 +48,9 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" /></noscript>
 
   <!-- Styles -->
   <link rel="stylesheet" href="assets/css/style.css?v=2" />
@@ -70,7 +88,7 @@
     <!-- ============ HERO ============ -->
     <section class="hero" id="home">
       <div class="container hero-inner">
-        <img class="hero-img" src="assets/images/hero.webp" alt="Himalayan mountains at sunrise with an intelligent CCTV camera" width="1404" height="743" />
+        <img class="hero-img" src="assets/images/hero.webp" alt="Himalayan mountains at sunrise with an intelligent CCTV camera" width="1404" height="743" fetchpriority="high" decoding="async" />
         <div class="hero-overlay">
           <h1 class="hero-title">Watch the world<br />in real time<br />with intelligent CCTV streaming</h1>
           <p class="hero-sub">Secure, high-definition live camera feeds from mountains, cities,<br />and critical locations — accessible anytime, anywhere.</p>
@@ -84,8 +102,8 @@
         <p class="eyebrow">&bull; ( ABOUT US )</p>
         <div class="about-grid">
           <div class="about-media">
-            <div class="circle circle-a"><img src="assets/images/about-station.webp" alt="High-altitude weather and camera station" /></div>
-            <div class="circle circle-b"><img src="assets/images/about-engineer.webp" alt="Field engineer in the mountains" /></div>
+            <div class="circle circle-a"><img src="assets/images/about-station.webp" width="860" height="778" alt="High-altitude weather and camera station" loading="lazy" decoding="async" /></div>
+            <div class="circle circle-b"><img src="assets/images/about-engineer.webp" width="528" height="560" alt="Field engineer in the mountains" loading="lazy" decoding="async" /></div>
           </div>
           <div class="about-body">
             <h2 class="about-title">
@@ -121,7 +139,7 @@
             <a href="contact" class="btn btn-dark">Talk to Expert <span class="arrow">&rarr;</span></a>
           </div>
           <div class="featured-image">
-            <img src="assets/images/featured-camera.webp" alt="SkyWatch camera station on a glacier" />
+            <img src="assets/images/featured-camera.webp" width="1098" height="1488" alt="SkyWatch camera station on a glacier" loading="lazy" decoding="async" />
           </div>
         </div>
       </div>
@@ -134,21 +152,21 @@
         <div class="services-grid">
 
           <article class="service">
-            <div class="service-img"><img src="assets/images/service-weather.webp" alt="Weather station monitoring a mountain valley" /></div>
+            <div class="service-img"><img src="assets/images/service-weather.webp" width="1024" height="1536" alt="Weather station monitoring a mountain valley" loading="lazy" decoding="async" /></div>
             <h4 class="service-name">Weather Station</h4>
             <p class="service-text">Live environmental data<br />from remote locations</p>
           </article>
 
           <article class="service service-featured">
             <div class="service-baked">
-              <img src="assets/images/service-streaming.webp" alt="Mountain Live Streaming — real-time high-altitude camera coverage in 4K, low latency, solar powered, -20&deg;C ready" />
+              <img src="assets/images/service-streaming.webp" width="1024" height="1536" alt="Mountain Live Streaming — real-time high-altitude camera coverage in 4K, low latency, solar powered, -20&deg;C ready" loading="lazy" decoding="async" />
             </div>
             <h4 class="service-name">Mountain Live Streaming</h4>
             <p class="service-text">Real-time high-altitude<br />camera coverage</p>
           </article>
 
           <article class="service">
-            <div class="service-img"><img src="assets/images/service-maps.webp" alt="Offline trail map with a location pin" /></div>
+            <div class="service-img"><img src="assets/images/service-maps.webp" width="1024" height="1536" alt="Offline trail map with a location pin" loading="lazy" decoding="async" /></div>
             <h4 class="service-name">Offline Maps</h4>
             <p class="service-text">Access locations even without<br />internet connectivity</p>
           </article>
@@ -162,7 +180,7 @@
       <div class="container">
         <div class="cta">
           <div class="cta-left">
-            <img class="cta-logo" src="assets/images/logo-gold.png" alt="Planet Tech Nepal" />
+            <img class="cta-logo" src="assets/images/logo-gold.png" width="1120" height="405" alt="Planet Tech Nepal" loading="lazy" decoding="async" />
             <address class="cta-address">
               Planet Tech Nepal Pvt. Ltd<br />
               Kathmandu, Nepal<br />
@@ -180,10 +198,10 @@
             <div class="interest interest-cta">
               <button type="button" class="interest-toggle">Not ready yet? I&rsquo;m interested &mdash; just take my email</button>
               <form class="interest-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" hidden>
-                <input type="email" name="email" placeholder="you@example.com" required />
+                <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required />
                 <input type="hidden" name="Source" value="Home page CTA" />
                 <input type="hidden" name="_subject" value="New interest signup — Home page" />
-                <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" />
+                <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
                 <button type="submit" class="btn btn-light btn-sm">Notify me</button>
               </form>
             </div>
