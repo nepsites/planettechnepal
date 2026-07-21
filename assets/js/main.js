@@ -28,3 +28,27 @@
     if (window.innerWidth > 900) closeMenu();
   });
 })();
+
+/* ============================================================
+   "I'm Interested" widgets — just a show/hide toggle.
+   The email form itself submits normally to Formspree (see the
+   action="https://formspree.io/f/..." attribute in the HTML) —
+   no JavaScript needed for the actual submission.
+   ============================================================ */
+(function () {
+  "use strict";
+
+  document.querySelectorAll(".interest").forEach(function (box) {
+    var toggle = box.querySelector(".interest-toggle");
+    var form = box.querySelector(".interest-form");
+    if (!toggle || !form) return;
+
+    toggle.addEventListener("click", function () {
+      form.hidden = !form.hidden;
+      if (!form.hidden) {
+        var input = form.querySelector('input[type="email"]');
+        if (input) input.focus();
+      }
+    });
+  });
+})();

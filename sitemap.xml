@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://planettechnepal.com/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://planettechnepal.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://planettechnepal.com/live-cameras</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://planettechnepal.com/weather</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://planettechnepal.com/technology</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://planettechnepal.com/pricing</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://planettechnepal.com/about</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://planettechnepal.com/contact</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>

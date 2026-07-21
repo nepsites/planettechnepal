@@ -42,18 +42,18 @@
   <!-- ============ HEADER ============ -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#home" class="logo" aria-label="Planet Tech Nepal — home">
+      <a href="/" class="logo" aria-label="Planet Tech Nepal — home">
         <img src="assets/images/logo.webp" alt="Planet Tech Nepal" width="155" height="56" />
       </a>
 
       <nav class="main-nav" id="mainNav" aria-label="Primary">
-        <a href="#home">Home</a>
-        <a href="#live">Live Cameras</a>
-        <a href="#weather">Weather</a>
-        <a href="#technology">Technology</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact</a>
+        <a href="/" class="active">Home</a>
+        <a href="live-cameras">Live Cameras</a>
+        <a href="weather">Weather</a>
+        <a href="technology">Technology</a>
+        <a href="pricing">Pricing</a>
+        <a href="about">About Us</a>
+        <a href="contact">Contact</a>
       </nav>
 
       <div class="header-actions">
@@ -96,7 +96,7 @@
             </h2>
             <p class="about-text">With deep expertise in IoT, cloud streaming, and high-altitude infrastructure, we deploy intelligent CCTV systems across remote mountain regions and urban landscapes.</p>
             <p class="about-text">Our mission is to deliver real-time visibility through secure, ultra-low latency streaming solutions designed for reliability, scalability, and long-term performance — even in extreme environments.</p>
-            <a href="#about" class="btn btn-dark">Our Journey <span class="arrow">&rarr;</span></a>
+            <a href="about" class="btn btn-dark">Our Journey <span class="arrow">&rarr;</span></a>
           </div>
         </div>
       </div>
@@ -118,7 +118,7 @@
               <li>Cloud Storage &amp; AI Alerts</li>
               <li>PTZ Remote Control</li>
             </ul>
-            <a href="#contact" class="btn btn-dark">Talk to Expert <span class="arrow">&rarr;</span></a>
+            <a href="contact" class="btn btn-dark">Talk to Expert <span class="arrow">&rarr;</span></a>
           </div>
           <div class="featured-image">
             <img src="assets/images/featured-camera.webp" alt="SkyWatch camera station on a glacier" />
@@ -174,8 +174,18 @@
             <p class="cta-text">Reliable live streaming built for extreme environments<br />
             Access ultra HD camera feeds, real-time weather data, and intelligent monitoring systems — all powered by secure cloud infrastructure designed for high-altitude performance.</p>
             <div class="cta-actions">
-              <a href="#live" class="btn btn-light">Explore Live <span class="arrow">&rarr;</span></a>
-              <a href="#technology" class="btn btn-light">Watch Demo <span class="arrow">&rarr;</span></a>
+              <a href="live-cameras" class="btn btn-light">Explore Live <span class="arrow">&rarr;</span></a>
+              <a href="technology" class="btn btn-light">Watch Demo <span class="arrow">&rarr;</span></a>
+            </div>
+            <div class="interest interest-cta">
+              <button type="button" class="interest-toggle">Not ready yet? I&rsquo;m interested &mdash; just take my email</button>
+              <form class="interest-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" hidden>
+                <input type="email" name="email" placeholder="you@example.com" required />
+                <input type="hidden" name="Source" value="Home page CTA" />
+                <input type="hidden" name="_subject" value="New interest signup — Home page" />
+                <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" />
+                <button type="submit" class="btn btn-light btn-sm">Notify me</button>
+              </form>
             </div>
           </div>
         </div>

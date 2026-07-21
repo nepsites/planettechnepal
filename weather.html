@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Stations — Planet Tech Nepal</title>
+  <meta name="description" content="Real-time environmental data from remote high-altitude weather stations across Nepal — temperature, wind, humidity and pressure, streamed live to the cloud." />
+  <link rel="canonical" href="https://planettechnepal.com/weather" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo" aria-label="Planet Tech Nepal — home">
+        <img src="assets/images/logo.webp" alt="Planet Tech Nepal" width="155" height="56" />
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="live-cameras">Live Cameras</a>
+        <a href="weather" class="active">Weather</a>
+        <a href="technology">Technology</a>
+        <a href="pricing">Pricing</a>
+        <a href="about">About Us</a>
+        <a href="contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="#login" class="btn btn-login">Login</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-title">Live environmental data from <span class="hl">remote locations</span></h1>
+        <p class="page-lead">Solar-powered weather stations capture temperature, wind, humidity and pressure at altitude and stream it to the cloud in real time — so trekkers, operators and planners always know exactly what the mountain is doing.</p>
+        <div class="page-actions">
+          <a href="contact" class="btn btn-dark">Deploy a station <span class="arrow">&rarr;</span></a>
+          <a href="pricing" class="btn btn-outline">See plans</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Split: station -->
+    <section class="pad">
+      <div class="container">
+        <div class="split">
+          <div class="split-media"><img src="assets/images/service-weather.webp" alt="High-altitude weather station reporting live conditions" /></div>
+          <div class="split-body">
+            <h2>One rugged station, every metric that matters</h2>
+            <p>Each unit combines an anemometer, thermometer, hygrometer and barometer with a hardened display and long-range radio — engineered to keep reporting through snow, ice and -20&deg;C storms.</p>
+            <ul class="ticks">
+              <li>Temperature, humidity, wind speed &amp; direction</li>
+              <li>Barometric pressure and trend forecasting</li>
+              <li>Solar + battery backup for off-grid operation</li>
+              <li>Frost- and storm-hardened enclosure</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live metrics band -->
+    <section class="pad band-dark">
+      <div class="container">
+        <div class="sec-head sec-center" style="color:#fff">
+          <h2 class="sec-title" style="color:#fff">A snapshot from the ridge, right now</h2>
+          <p class="sec-sub" style="color:#bbb">Sample readings streamed from a station at 3,520 m. Live values update on your dashboard.</p>
+        </div>
+        <div class="stats">
+          <div class="stat"><div class="n" style="color:#fff">-10&deg;C</div><div class="l">Temperature</div></div>
+          <div class="stat"><div class="n" style="color:#fff">85%</div><div class="l">Humidity</div></div>
+          <div class="stat"><div class="n" style="color:#fff">12<span style="font-size:20px">km/h</span></div><div class="l">Wind</div></div>
+          <div class="stat"><div class="n" style="color:#fff">997<span style="font-size:20px">hPa</span></div><div class="l">Pressure</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Use cases -->
+    <section class="pad">
+      <div class="container">
+        <div class="sec-head sec-center"><h2 class="sec-title">Who relies on our weather network</h2></div>
+        <div class="grid-3">
+          <div class="card">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18l6-6 4 4 8-8"/><path d="M21 8v5h-5"/></svg></div>
+            <h3>Expedition planning</h3>
+            <p>Guides and climbers read live wind and temperature windows before committing to a summit push.</p>
+          </div>
+          <div class="card">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+            <h3>Local communities</h3>
+            <p>Early signals of storms, frost and flooding help remote villages and farms prepare in time.</p>
+          </div>
+          <div class="card">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+            <h3>Research &amp; agencies</h3>
+            <p>Climate researchers and authorities tap clean, timestamped datasets via API export.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-wrap">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-left">
+            <img class="cta-logo" src="assets/images/logo-gold.png" alt="Planet Tech Nepal" />
+            <address class="cta-address">Planet Tech Nepal Pvt. Ltd<br />Kathmandu, Nepal<br /><a href="mailto:info@planettechnepal.com">info@planettechnepal.com</a></address>
+          </div>
+          <div class="cta-right">
+            <h2 class="cta-title">Put a live weather station on your peak</h2>
+            <p class="cta-text">Talk to our team about deployment, data access, and integrating readings into your own systems.</p>
+            <div class="cta-actions">
+              <a href="contact" class="btn btn-light">Talk to an Expert <span class="arrow">&rarr;</span></a>
+              <a href="pricing" class="btn btn-light">View Pricing <span class="arrow">&rarr;</span></a>
+            </div>
+          </div>
+        </div>
+        <p class="copyright">&copy; 2026 Planet Tech Nepal. All Rights Reserved | <a href="#">Terms of Use</a></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
