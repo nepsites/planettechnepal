@@ -66,6 +66,16 @@
   var errorEl = document.getElementById("loginError");
   var card = document.querySelector(".login-card");
   var password = document.getElementById("password");
+  var pwToggle = document.getElementById("pwToggle");
+
+  if (pwToggle && password) {
+    pwToggle.addEventListener("click", function () {
+      var showing = password.type === "text";
+      password.type = showing ? "password" : "text";
+      pwToggle.setAttribute("aria-label", showing ? "Show password" : "Hide password");
+      pwToggle.classList.toggle("is-visible", !showing);
+    });
+  }
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
