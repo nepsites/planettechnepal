@@ -27,7 +27,7 @@ body{
   font-weight:400;color:var(--ink);background:#fff;line-height:1.45;
   -webkit-font-smoothing:antialiased;
 }
-img{display:block;max-width:100%}
+img{display:block;max-width:100%;height:auto}
 a{text-decoration:none;color:inherit}
 
 .container{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 var(--pad-x)}
