@@ -71,6 +71,7 @@
     <section class="hero" id="home">
       <div class="container hero-inner">
         <img class="hero-img" src="assets/images/hero.webp" alt="Himalayan mountains at sunrise with an intelligent CCTV camera" width="1404" height="743" />
+        <div class="hero-3d" id="hero3d" aria-hidden="true"></div>
         <div class="hero-overlay">
           <h1 class="hero-title">Watch the world<br />in real time<br />with intelligent CCTV streaming</h1>
           <p class="hero-sub">Secure, high-definition live camera feeds from mountains, cities,<br />and critical locations — accessible anytime, anywhere.</p>
@@ -196,5 +197,8 @@
   </main>
 
   <script src="assets/js/main.js" defer></script>
+  <!-- Hero 3D globe (homepage only) — three.js via CDN, progressive enhancement -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js" defer></script>
+  <script src="assets/js/hero-globe.js" defer></script>
 </body>
 </html>
