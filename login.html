@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login — Planet Tech Nepal</title>
+  <meta name="description" content="Sign in to your Planet Tech Nepal account to manage cameras, weather stations and live streams." />
+  <link rel="canonical" href="https://planettechnepal.com/login" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo" aria-label="Planet Tech Nepal — home">
+        <img src="assets/images/logo.webp" alt="Planet Tech Nepal" width="155" height="56" />
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="live-cameras">Live Cameras</a>
+        <a href="weather">Weather</a>
+        <a href="technology">Technology</a>
+        <a href="pricing">Pricing</a>
+        <a href="about">About Us</a>
+        <a href="contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="login" class="btn btn-login">Login</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="pad login-wrap">
+      <div class="container login-container">
+        <div class="login-card">
+          <h1 class="login-title">Welcome back</h1>
+          <p class="login-sub">Sign in to manage your cameras, weather stations and live streams.</p>
+
+          <form id="loginForm" class="login-form" novalidate>
+            <div class="login-field">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" autocomplete="username" required />
+            </div>
+            <div class="login-field">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" autocomplete="current-password" required />
+            </div>
+
+            <p class="login-error" id="loginError" role="alert" hidden>Username or password is incorrect.</p>
+
+            <button type="submit" class="btn btn-dark btn-block">Login</button>
+          </form>
+
+          <p class="login-foot">Need access? <a href="contact">Contact us</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

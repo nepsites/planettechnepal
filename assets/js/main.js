@@ -52,3 +52,35 @@
     });
   });
 })();
+
+/* ============================================================
+   Login page — there's no backend/user database behind this
+   static site, so every attempt shows the same generic error.
+   ============================================================ */
+(function () {
+  "use strict";
+
+  var form = document.getElementById("loginForm");
+  if (!form) return;
+
+  var errorEl = document.getElementById("loginError");
+  var card = document.querySelector(".login-card");
+  var password = document.getElementById("password");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    if (errorEl) errorEl.hidden = false;
+
+    if (card) {
+      card.classList.remove("shake");
+      void card.offsetWidth; // restart the animation on repeat clicks
+      card.classList.add("shake");
+    }
+
+    if (password) {
+      password.value = "";
+      password.focus();
+    }
+  });
+})();
