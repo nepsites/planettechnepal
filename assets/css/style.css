@@ -141,14 +141,6 @@ a{text-decoration:none;color:inherit}
 
 .login-panel{display:flex;align-items:center;justify-content:center;padding:clamp(28px,4vw,48px)}
 .login-card{width:100%;max-width:380px}
-.login-title{font-size:clamp(24px,3vw,30px);font-weight:400;letter-spacing:-.3px;margin-bottom:22px}
-
-.btn-google{width:100%;display:flex;align-items:center;justify-content:center;gap:12px;background:#fff;border:1px solid #dcdcdc;border-radius:12px;padding:13px 16px;font-family:inherit;font-size:14.5px;font-weight:500;color:#111;cursor:pointer;transition:box-shadow .15s ease,border-color .15s ease}
-.btn-google:hover{border-color:#b9b9b9;box-shadow:0 4px 14px rgba(15,20,35,.08)}
-.login-google-note{font-size:12.5px;color:#7a5b00;background:#fff8e6;border:1px solid #f2e3ab;border-radius:8px;padding:8px 10px;margin-top:10px}
-
-.login-divider{display:flex;align-items:center;gap:14px;font-size:13px;color:#8a8a8a;margin:22px 0}
-.login-divider::before,.login-divider::after{content:"";flex:1;height:1px;background:#e4e4e4}
 
 .login-sub{font-size:14.5px;color:#555;line-height:1.5;margin-bottom:28px}
 .login-form{display:flex;flex-direction:column;gap:16px}
@@ -167,6 +159,7 @@ a{text-decoration:none;color:inherit}
 .login-remember input{accent-color:#111}
 .login-row a{color:#111;text-decoration:underline}
 .login-error{background:#fdecec;color:#b3261e;font-size:13.5px;font-weight:500;padding:10px 12px;border-radius:8px;margin:0;display:flex;align-items:center;gap:8px}
+.login-error[hidden]{display:none}
 .login-error svg{width:15px;height:15px;flex-shrink:0}
 .login-card.shake{animation:loginShake .4s}
 @keyframes loginShake{
@@ -179,7 +172,7 @@ a{text-decoration:none;color:inherit}
 .login-foot a{text-decoration:underline}
 
 /* Right side: abstract brand shapes + bold headline */
-.login-visual{position:relative;overflow:hidden;background:var(--card)}
+.login-visual{position:relative;overflow:hidden;background:linear-gradient(160deg,#efe9dd 0%,#e2dac8 55%,#d8cdb3 100%)}
 .login-visual .shape{position:absolute;filter:saturate(1)}
 .shape-a{width:340px;height:340px;top:-90px;right:-70px;border-radius:42% 58% 65% 35% / 45% 40% 60% 55%;background:radial-gradient(circle at 35% 30%,#2a2a2a,#0d0d0d 70%)}
 .shape-b{width:190px;height:190px;top:60px;right:220px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#f0d9a6,#d8b46a 75%);opacity:.9}

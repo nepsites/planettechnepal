@@ -77,14 +77,6 @@
     });
   }
 
-  var googleBtn = document.getElementById("googleBtn");
-  var googleNote = document.getElementById("googleNote");
-  if (googleBtn && googleNote) {
-    googleBtn.addEventListener("click", function () {
-      googleNote.hidden = false;
-    });
-  }
-
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
