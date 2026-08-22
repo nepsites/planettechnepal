@@ -31,9 +31,7 @@
 
 /* ============================================================
    "I'm Interested" widgets — just a show/hide toggle.
-   The email form itself submits normally to Formspree (see the
-   action="https://formspree.io/f/..." attribute in the HTML) —
-   no JavaScript needed for the actual submission.
+   Submission itself is handled by the Formspree AJAX block below.
    ============================================================ */
 (function () {
   "use strict";
@@ -49,6 +47,60 @@
         var input = form.querySelector('input[type="email"]');
         if (input) input.focus();
       }
+    });
+  });
+})();
+
+/* ============================================================
+   Formspree AJAX submission — keeps visitors on the page instead
+   of redirecting to Web3Forms' hosted "thanks" page. Applies to
+   the main contact form (.form) and the pricing/home "I'm
+   interested" mini forms (.interest-form).
+   ============================================================ */
+(function () {
+  "use strict";
+
+  var forms = document.querySelectorAll('form[action*="web3forms.com"]');
+  forms.forEach(function (form) {
+    var status = document.createElement("p");
+    status.className = "form-status";
+    status.hidden = true;
+    form.appendChild(status);
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      status.hidden = true;
+      status.classList.remove("error", "success");
+
+      var submitBtn = form.querySelector('button[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
+
+      fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      })
+        .then(function (response) {
+          return response.json().then(function (data) {
+            if (data && data.success) {
+              form.reset();
+              status.textContent = "Thanks — your message has been sent. We'll be in touch soon.";
+              status.classList.add("success");
+            } else {
+              status.textContent =
+                (data && data.message) || "Something went wrong. Please try again or email us directly.";
+              status.classList.add("error");
+            }
+          });
+        })
+        .catch(function () {
+          status.textContent = "Something went wrong. Please check your connection and try again.";
+          status.classList.add("error");
+        })
+        .finally(function () {
+          status.hidden = false;
+          if (submitBtn) submitBtn.disabled = false;
+        });
     });
   });
 })();

@@ -53,7 +53,7 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" /></noscript>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="assets/css/style.css?v=3" />
+  <link rel="stylesheet" href="assets/css/style.css?v=5" />
 </head>
 <body>
 
@@ -197,11 +197,13 @@
             </div>
             <div class="interest interest-cta">
               <button type="button" class="interest-toggle">Not ready yet? I&rsquo;m interested &mdash; just take my email</button>
-              <form class="interest-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" hidden>
+              <form class="interest-form" action="https://api.web3forms.com/submit" method="POST" hidden>
+                <input type="hidden" name="access_key" value="4c8312cd-f523-4874-a32f-0eaa56a8634f" />
+                <input type="hidden" name="from_name" value="Planet Tech Nepal website" />
                 <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required />
                 <input type="hidden" name="Source" value="Home page CTA" />
-                <input type="hidden" name="_subject" value="New interest signup — Home page" />
-                <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+                <input type="hidden" name="subject" value="New interest signup — Home page" />
+                <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
                 <button type="submit" class="btn btn-light btn-sm">Notify me</button>
               </form>
             </div>
@@ -213,6 +215,6 @@
 
   </main>
 
-  <script src="assets/js/main.js?v=2" defer></script>
+  <script src="assets/js/main.js?v=4" defer></script>
 </body>
 </html>

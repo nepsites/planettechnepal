@@ -287,10 +287,14 @@ a{text-decoration:none;color:inherit}
 
 /* ============================================================
    LEAD CAPTURE — Contact form + "I'm Interested" widget
-   Both submit as plain HTML forms to Formspree (see the action=
-   attributes in the HTML) — no JavaScript or backend required.
+   Both post to Formspree; assets/js/main.js submits them via
+   fetch() so visitors stay on the page instead of being
+   redirected to Formspree's hosted "thanks" page.
    ============================================================ */
 .hp{position:absolute !important;left:-9999px !important;top:auto !important;width:1px !important;height:1px !important;opacity:0 !important;overflow:hidden !important;pointer-events:none}
+.form-status{margin-top:12px;font-size:14px;font-weight:500}
+.form-status.success{color:#1a7a3a}
+.form-status.error{color:#b3261e}
 
 .interest{margin-top:12px}
 .interest-toggle{
