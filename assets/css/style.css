@@ -131,7 +131,7 @@ a{text-decoration:none;color:inherit}
 .breadcrumb a{color:#666}
 .breadcrumb a:hover{color:#000}
 .page-eyebrow{font-size:15px;font-weight:700;margin-bottom:14px}
-.page-title{font-size:clamp(12px,3.4vw,34px);font-weight:400;line-height:1.14;letter-spacing:-.5px;max-width:100%;margin:0 auto;white-space:nowrap}
+.page-title{font-size:clamp(26px,6vw,34px);font-weight:400;line-height:1.2;letter-spacing:-.5px;max-width:100%;margin:0 auto}
 .page-title .hl{background:var(--hl);padding:0 14px;border-radius:10px;font-weight:700}
 .page-lead{font-size:clamp(15px,1.7vw,18px);font-weight:400;color:#333;line-height:1.6;max-width:660px;margin:16px auto 0}
 .page-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px;justify-content:center}
@@ -349,6 +349,7 @@ a{text-decoration:none;color:inherit}
   .stats{grid-template-columns:repeat(2,1fr)}
   .steps{grid-template-columns:repeat(2,1fr)}
   .cta-actions .btn,.page-actions .btn{flex:1;justify-content:center}
+  .form .row{grid-template-columns:1fr}
 }
 @media (max-width:400px){
   .steps{grid-template-columns:1fr}
