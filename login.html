@@ -27,7 +27,7 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" /></noscript>
-  <link rel="stylesheet" href="assets/css/style.css?v=5" />
+  <link rel="stylesheet" href="assets/css/style.css?v=6" />
 </head>
 <body>
 
@@ -63,7 +63,7 @@
               <label for="email" class="sr-only">Email</label>
               <div class="login-input-wrap">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg>
-                <input type="text" id="email" name="email" autocomplete="username" placeholder="Email" required />
+                <input type="email" id="email" name="email" autocomplete="username" placeholder="Email" required />
               </div>
             </div>
             <div class="login-field">
@@ -84,7 +84,7 @@
 
             <p class="login-error" id="loginError" role="alert" hidden>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-              Username or password is incorrect.
+              <span id="loginErrorText">Username or password is incorrect.</span>
             </p>
 
             <button type="submit" class="btn btn-dark btn-block">Login</button>
@@ -109,6 +109,6 @@
     </section>
   </main>
 
-  <script src="assets/js/main.js?v=5" defer></script>
+  <script src="assets/js/main.js?v=6" defer></script>
 </body>
 </html>

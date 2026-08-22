@@ -132,8 +132,12 @@
   var form = document.getElementById("loginForm");
   if (!form) return;
 
+  var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
   var errorEl = document.getElementById("loginError");
+  var errorText = document.getElementById("loginErrorText");
   var card = document.querySelector(".login-card");
+  var email = document.getElementById("email");
   var password = document.getElementById("password");
   var pwToggle = document.getElementById("pwToggle");
 
@@ -146,16 +150,39 @@
     });
   }
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
+  if (email) {
+    email.addEventListener("input", function () {
+      email.classList.remove("invalid");
+      if (errorEl) errorEl.hidden = true;
+    });
+  }
 
+  function showError(message) {
+    if (errorText) errorText.textContent = message;
     if (errorEl) errorEl.hidden = false;
-
     if (card) {
       card.classList.remove("shake");
       void card.offsetWidth; // restart the animation on repeat clicks
       card.classList.add("shake");
     }
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    var emailValue = email ? email.value.trim() : "";
+
+    if (!EMAIL_RE.test(emailValue)) {
+      if (email) {
+        email.classList.add("invalid");
+        email.focus();
+      }
+      showError(emailValue ? "Enter a valid email address." : "Email is required.");
+      return;
+    }
+
+    if (email) email.classList.remove("invalid");
+    showError("Username or password is incorrect.");
 
     if (password) {
       password.value = "";

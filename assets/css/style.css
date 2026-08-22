@@ -151,6 +151,7 @@ a{text-decoration:none;color:inherit}
 .login-input-wrap svg{position:absolute;left:14px;width:17px;height:17px;color:#8a8a8a;pointer-events:none}
 .login-input-wrap input{width:100%;font-family:inherit;font-size:15px;padding:13px 14px 13px 42px;border:1px solid #dcdcdc;border-radius:10px;background:#f7f7f7;color:#111}
 .login-input-wrap input:focus{outline:none;border-color:#111;background:#fff}
+.login-input-wrap input.invalid{border-color:#b3261e}
 .login-input-wrap .pw-toggle{position:absolute;right:6px;background:none;border:none;padding:8px;cursor:pointer;color:#8a8a8a;display:flex;border-radius:8px}
 .login-input-wrap .pw-toggle:hover{color:#111;background:#f3f3f3}
 .login-input-wrap .pw-toggle svg{position:static}
