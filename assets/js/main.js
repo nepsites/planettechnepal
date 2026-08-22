@@ -75,9 +75,26 @@
       var submitBtn = form.querySelector('button[type="submit"]');
       if (submitBtn) submitBtn.disabled = true;
 
+      var formData = new FormData(form);
+
+      // Contact form: fold "I'm interested in" + "Location / site" into
+      // the Message field instead of sending them as separate fields.
+      var topic = form.querySelector('[name="Topic"]');
+      var location = form.querySelector('[name="Location"]');
+      var message = form.querySelector('[name="Message"]');
+      if (topic && location && message) {
+        var parts = ["Interested in: " + topic.value];
+        if (location.value) parts.push("Location / site: " + location.value);
+        parts.push("");
+        parts.push(message.value);
+        formData.set("Message", parts.join("\n"));
+        formData.delete("Topic");
+        formData.delete("Location");
+      }
+
       fetch(form.action, {
         method: "POST",
-        body: new FormData(form),
+        body: formData,
         headers: { Accept: "application/json" },
       })
         .then(function (response) {
